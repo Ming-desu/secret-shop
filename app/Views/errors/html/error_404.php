@@ -73,11 +73,11 @@
         <h1>404 - File Not Found</h1>
 
         <p>
-            <?php if (ENVIRONMENT !== 'production') : ?>
-                <?= nl2br(esc($message)) ?>
-            <?php else : ?>
+            <?php if (ENVIRONMENT !== 'production') { ?>
+                <?php echo nl2br(esc($message)); ?>
+            <?php } else { ?>
                 Sorry! Cannot seem to find the page you were looking for.
-            <?php endif ?>
+            <?php } ?>
         </p>
     </div>
 </body>
