@@ -31,7 +31,8 @@
   },
   "scripts": {
     "start": "php spark serve",
-    "test": "phpunit"
+    "test": "phpunit",
+    "fix": "./vendor/bin/php-cs-fixer fix . --config=.php-cs-fixer.php -vvv"
   },
   "support": {
     "forum": "http://forum.codeigniter.com/",
